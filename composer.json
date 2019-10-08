@@ -1,30 +1,17 @@
 {
-    "name": "phpoffice/phpspreadsheet",
-    "description": "PHPSpreadsheet - Read, Create and Write Spreadsheet documents in PHP - Spreadsheet engine",
+    "name": "zeincube/ultimate-spreadsheet",
+    "description": "Ultimate php spreadsheet library",
     "keywords": ["PHP", "OpenXML", "Excel", "xlsx", "xls", "ods", "gnumeric", "spreadsheet"],
-    "homepage": "https://github.com/PHPOffice/PhpSpreadsheet",
+    "homepage": "https://github.com/ZeinCube/PhpSpreadsheet",
     "type": "library",
     "license": "LGPL-2.1-or-later",
     "authors": [
         {
-            "name": "Maarten Balliauw",
-            "homepage": "https://blog.maartenballiauw.be"
-        },
-        {
-            "name": "Mark Baker",
-            "homepage": "https://markbakeruk.net"
-        },
-        {
-            "name": "Franck Lefevre",
-            "homepage": "https://rootslabs.net"
-        },
-        {
-            "name": "Erik Tilt"
-        },
-        {
-            "name": "Adrien Crivelli"
+            "name": "ZeinCube",
+            "homepage": "https://github.com/ZeinCube"
         }
     ],
+    "minimum-stability": "dev",
     "scripts": {
         "check": [
             "php-cs-fixer fix --ansi --dry-run --diff",
