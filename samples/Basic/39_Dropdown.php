@@ -1,8 +1,8 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Cell\DataValidation;
-use PhpOffice\PhpSpreadsheet\NamedRange;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Cell\DataValidation;
+use PhpOffice\UltimateSpreadSheet\NamedRange;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 require __DIR__ . '/../Header.php';
 
@@ -15,10 +15,10 @@ $helper->log('Set document properties');
 $spreadsheet->getProperties()
     ->setCreator('PHPOffice')
     ->setLastModifiedBy('PHPOffice')
-    ->setTitle('PhpSpreadsheet Test Document')
-    ->setSubject('PhpSpreadsheet Test Document')
-    ->setDescription('Test document for PhpSpreadsheet, generated using PHP classes.')
-    ->setKeywords('Office PhpSpreadsheet php')
+    ->setTitle('UltimateSpreadSheet Test Document')
+    ->setSubject('UltimateSpreadSheet Test Document')
+    ->setDescription('Test document for UltimateSpreadSheet, generated using PHP classes.')
+    ->setKeywords('Office UltimateSpreadSheet php')
     ->setCategory('Test result file');
 function transpose($value)
 {

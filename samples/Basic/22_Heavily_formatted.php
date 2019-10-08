@@ -1,8 +1,8 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Style\Border;
-use PhpOffice\PhpSpreadsheet\Style\Fill;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Style\Border;
+use PhpOffice\UltimateSpreadSheet\Style\Fill;
 
 require __DIR__ . '/../Header.php';
 

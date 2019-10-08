@@ -2,14 +2,14 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Reader;
 
-use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
-use PhpOffice\PhpSpreadsheet\Document\Properties;
-use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
-use PhpOffice\PhpSpreadsheet\Shared\File;
-use PhpOffice\PhpSpreadsheet\Style\Conditional;
-use PhpOffice\PhpSpreadsheet\Style\Style;
-use PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter;
-use PhpOffice\PhpSpreadsheet\Worksheet\PageSetup;
+use PhpOffice\UltimateSpreadSheet\Cell\Coordinate;
+use PhpOffice\UltimateSpreadSheet\Document\Properties;
+use PhpOffice\UltimateSpreadSheet\Reader\Xlsx;
+use PhpOffice\UltimateSpreadSheet\Shared\File;
+use PhpOffice\UltimateSpreadSheet\Style\Conditional;
+use PhpOffice\UltimateSpreadSheet\Style\Style;
+use PhpOffice\UltimateSpreadSheet\Worksheet\AutoFilter;
+use PhpOffice\UltimateSpreadSheet\Worksheet\PageSetup;
 use PHPUnit\Framework\TestCase;
 
 class XlsxTest extends TestCase
@@ -222,7 +222,7 @@ class XlsxTest extends TestCase
         $reader = new Xlsx();
         $excel = $reader->load($filename);
         $resultFilename = tempnam(File::sysGetTempDir(), 'phpspreadsheet-test');
-        $writer = new \PhpOffice\PhpSpreadsheet\Writer\Xlsx($excel);
+        $writer = new \PhpOffice\UltimateSpreadSheet\Writer\Xlsx($excel);
         $writer->save($resultFilename);
         $excel = $reader->load($resultFilename);
         // Fake assert. The only thing we need is to ensure the file is loaded without exception

@@ -2,13 +2,13 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Cell;
 
-use PhpOffice\PhpSpreadsheet\Cell\AdvancedValueBinder;
-use PhpOffice\PhpSpreadsheet\Cell\Cell;
-use PhpOffice\PhpSpreadsheet\Cell\DataType;
-use PhpOffice\PhpSpreadsheet\Collection\Cells;
-use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
-use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use PhpOffice\UltimateSpreadSheet\Cell\AdvancedValueBinder;
+use PhpOffice\UltimateSpreadSheet\Cell\Cell;
+use PhpOffice\UltimateSpreadSheet\Cell\DataType;
+use PhpOffice\UltimateSpreadSheet\Collection\Cells;
+use PhpOffice\UltimateSpreadSheet\Shared\StringHelper;
+use PhpOffice\UltimateSpreadSheet\Style\NumberFormat;
+use PhpOffice\UltimateSpreadSheet\Worksheet\Worksheet;
 use PHPUnit\Framework\TestCase;
 
 class AdvancedValueBinderTest extends TestCase

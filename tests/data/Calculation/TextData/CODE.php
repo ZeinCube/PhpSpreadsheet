@@ -27,7 +27,7 @@ return [
     ],
     [
         80,
-        'PhpSpreadsheet',
+        'UltimateSpreadSheet',
     ],
     [
         49,

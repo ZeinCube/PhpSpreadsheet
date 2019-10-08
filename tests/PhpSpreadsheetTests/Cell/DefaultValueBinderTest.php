@@ -4,10 +4,10 @@ namespace PhpOffice\PhpSpreadsheetTests\Cell;
 
 use DateTime;
 use DateTimeImmutable;
-use PhpOffice\PhpSpreadsheet\Cell\Cell;
-use PhpOffice\PhpSpreadsheet\Cell\DataType;
-use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
-use PhpOffice\PhpSpreadsheet\RichText\RichText;
+use PhpOffice\UltimateSpreadSheet\Cell\Cell;
+use PhpOffice\UltimateSpreadSheet\Cell\DataType;
+use PhpOffice\UltimateSpreadSheet\Cell\DefaultValueBinder;
+use PhpOffice\UltimateSpreadSheet\RichText\RichText;
 use PHPUnit\Framework\TestCase;
 
 class DefaultValueBinderTest extends TestCase

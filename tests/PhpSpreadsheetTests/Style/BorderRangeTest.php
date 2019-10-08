@@ -2,9 +2,9 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Style;
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Style\Border;
-use PhpOffice\PhpSpreadsheet\Style\Color;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Style\Border;
+use PhpOffice\UltimateSpreadSheet\Style\Color;
 use PHPUnit\Framework\TestCase;
 
 class BorderRangeTest extends TestCase

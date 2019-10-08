@@ -1,6 +1,6 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Shared\Date;
+use PhpOffice\UltimateSpreadSheet\Shared\Date;
 
 return [
     [

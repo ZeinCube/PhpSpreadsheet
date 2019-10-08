@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Cell;
 
-use PhpOffice\PhpSpreadsheet\Cell\DataValidation;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Cell\DataValidation;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 use PHPUnit\Framework\TestCase;
 
 class DataValidatorTest extends TestCase

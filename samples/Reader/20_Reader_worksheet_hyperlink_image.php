@@ -1,6 +1,6 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 require __DIR__ . '/../Header.php';
 $inputFileType = 'Xlsx';
@@ -13,34 +13,34 @@ $aSheet = $spreadsheet->getActiveSheet();
 
 $gdImage = @imagecreatetruecolor(120, 20);
 $textColor = imagecolorallocate($gdImage, 255, 255, 255);
-imagestring($gdImage, 1, 5, 5, 'Created with PhpSpreadsheet', $textColor);
+imagestring($gdImage, 1, 5, 5, 'Created with UltimateSpreadSheet', $textColor);
 
 $baseUrl = 'https://phpspreadsheet.readthedocs.io';
 
-$drawing = new \PhpOffice\PhpSpreadsheet\Worksheet\MemoryDrawing();
+$drawing = new \PhpOffice\UltimateSpreadSheet\Worksheet\MemoryDrawing();
 $drawing->setName('In-Memory image 1');
 $drawing->setDescription('In-Memory image 1');
 $drawing->setCoordinates('A1');
 $drawing->setImageResource($gdImage);
 $drawing->setRenderingFunction(
-    \PhpOffice\PhpSpreadsheet\Worksheet\MemoryDrawing::RENDERING_JPEG
+    \PhpOffice\UltimateSpreadSheet\Worksheet\MemoryDrawing::RENDERING_JPEG
 );
-$drawing->setMimeType(\PhpOffice\PhpSpreadsheet\Worksheet\MemoryDrawing::MIMETYPE_DEFAULT);
+$drawing->setMimeType(\PhpOffice\UltimateSpreadSheet\Worksheet\MemoryDrawing::MIMETYPE_DEFAULT);
 $drawing->setHeight(36);
 $helper->log('Write image');
 
-$hyperLink = new \PhpOffice\PhpSpreadsheet\Cell\Hyperlink($baseUrl, 'test image');
+$hyperLink = new \PhpOffice\UltimateSpreadSheet\Cell\Hyperlink($baseUrl, 'test image');
 $drawing->setHyperlink($hyperLink);
 $helper->log('Write link: ' . $baseUrl);
 
 $drawing->setWorksheet($aSheet);
 
-$filename = tempnam(\PhpOffice\PhpSpreadsheet\Shared\File::sysGetTempDir(), 'phpspreadsheet-test');
+$filename = tempnam(\PhpOffice\UltimateSpreadSheet\Shared\File::sysGetTempDir(), 'phpspreadsheet-test');
 
-$writer = \PhpOffice\PhpSpreadsheet\IOFactory::createWriter($spreadsheet, $inputFileType);
+$writer = \PhpOffice\UltimateSpreadSheet\IOFactory::createWriter($spreadsheet, $inputFileType);
 $writer->save($filename);
 
-$reader = \PhpOffice\PhpSpreadsheet\IOFactory::createReader($inputFileType);
+$reader = \PhpOffice\UltimateSpreadSheet\IOFactory::createReader($inputFileType);
 
 $reloadedSpreadsheet = $reader->load($filename);
 unlink($filename);

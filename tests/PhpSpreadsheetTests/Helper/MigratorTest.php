@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Helper;
 
-use PhpOffice\PhpSpreadsheet\Helper\Migrator;
+use PhpOffice\UltimateSpreadSheet\Helper\Migrator;
 use PHPUnit\Framework\TestCase;
 
 class MigratorTest extends TestCase

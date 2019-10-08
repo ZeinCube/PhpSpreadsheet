@@ -2,9 +2,9 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Writer\Xls\Workbook;
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Writer\Xls\Parser;
-use PhpOffice\PhpSpreadsheet\Writer\Xls\Workbook;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Writer\Xls\Parser;
+use PhpOffice\UltimateSpreadSheet\Writer\Xls\Workbook;
 use PHPUnit\Framework\TestCase;
 
 class WorkbookTest extends TestCase

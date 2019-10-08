@@ -1,7 +1,7 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Worksheet\Worksheet;
 
 require __DIR__ . '/../Header.php';
 

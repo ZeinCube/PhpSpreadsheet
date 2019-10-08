@@ -1,7 +1,7 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Worksheet\SheetView;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Worksheet\SheetView;
 
 require __DIR__ . '/../Header.php';
 
@@ -13,10 +13,10 @@ $spreadsheet = new Spreadsheet();
 $helper->log('Set document properties');
 $spreadsheet->getProperties()->setCreator('PHPOffice')
     ->setLastModifiedBy('PHPOffice')
-    ->setTitle('PhpSpreadsheet Test Document')
-    ->setSubject('PhpSpreadsheet Test Document')
-    ->setDescription('Test document for PhpSpreadsheet, generated using PHP classes.')
-    ->setKeywords('Office PhpSpreadsheet php')
+    ->setTitle('UltimateSpreadSheet Test Document')
+    ->setSubject('UltimateSpreadSheet Test Document')
+    ->setDescription('Test document for UltimateSpreadSheet, generated using PHP classes.')
+    ->setKeywords('Office UltimateSpreadSheet php')
     ->setCategory('Test result file');
 
 // Add some data

@@ -1,12 +1,12 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 require __DIR__ . '/../../Header.php';
 
 $helper->log('Extracts a single value from a column of a list or database that matches conditions that you specify.');
 
-// Create new PhpSpreadsheet object
+// Create new UltimateSpreadSheet object
 $spreadsheet = new Spreadsheet();
 $worksheet = $spreadsheet->getActiveSheet();
 

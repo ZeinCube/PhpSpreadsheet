@@ -2,9 +2,9 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Functional;
 
-use PhpOffice\PhpSpreadsheet\IOFactory;
-use PhpOffice\PhpSpreadsheet\Shared\File;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\IOFactory;
+use PhpOffice\UltimateSpreadSheet\Shared\File;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 use PHPUnit\Framework\TestCase;
 
 /**

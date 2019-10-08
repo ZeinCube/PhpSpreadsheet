@@ -1,7 +1,7 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Style\Protection;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Style\Protection;
 
 require __DIR__ . '/../Header.php';
 

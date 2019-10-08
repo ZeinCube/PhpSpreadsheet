@@ -1,6 +1,6 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 require __DIR__ . '/../Header.php';
 
@@ -70,7 +70,7 @@ $spreadsheet->getActiveSheet()
     ->setTitle('Formulas');
 
 //
-//  If we set Pre Calculated Formulas to true then PhpSpreadsheet will calculate all formulae in the
+//  If we set Pre Calculated Formulas to true then UltimateSpreadSheet will calculate all formulae in the
 //    workbook before saving. This adds time and memory overhead, and can cause some problems with formulae
 //    using functions or features (such as array formulae) that aren't yet supported by the calculation engine
 //  If the value is false (the default) for the Xlsx Writer, then MS Excel (or the application used to

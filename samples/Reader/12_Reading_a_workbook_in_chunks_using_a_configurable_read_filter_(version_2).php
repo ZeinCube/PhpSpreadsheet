@@ -2,8 +2,8 @@
 
 namespace Samples\Sample12;
 
-use PhpOffice\PhpSpreadsheet\IOFactory;
-use PhpOffice\PhpSpreadsheet\Reader\IReadFilter;
+use PhpOffice\UltimateSpreadSheet\IOFactory;
+use PhpOffice\UltimateSpreadSheet\Reader\IReadFilter;
 
 require __DIR__ . '/../Header.php';
 
@@ -57,7 +57,7 @@ for ($startRow = 2; $startRow <= 240; $startRow += $chunkSize) {
     $helper->log('Loading WorkSheet using configurable filter for headings row 1 and for rows ' . $startRow . ' to ' . ($startRow + $chunkSize - 1));
     // Tell the Read Filter, the limits on which rows we want to read this iteration
     $chunkFilter->setRows($startRow, $chunkSize);
-    // Load only the rows that match our filter from $inputFileName to a PhpSpreadsheet Object
+    // Load only the rows that match our filter from $inputFileName to a UltimateSpreadSheet Object
     $spreadsheet = $reader->load($inputFileName);
 
     // Do some processing here

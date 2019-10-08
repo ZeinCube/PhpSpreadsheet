@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Reader;
 
-use PhpOffice\PhpSpreadsheet\Reader\IReadFilter;
+use PhpOffice\UltimateSpreadSheet\Reader\IReadFilter;
 
 /**
  * Show only cells from odd columns.

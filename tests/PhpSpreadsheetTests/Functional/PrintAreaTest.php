@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Functional;
 
-use PhpOffice\PhpSpreadsheet\Reader\BaseReader;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Reader\BaseReader;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 class PrintAreaTest extends AbstractFunctional
 {

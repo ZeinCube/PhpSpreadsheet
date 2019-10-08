@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Cell;
 
-use PhpOffice\PhpSpreadsheet\Cell\DataType;
+use PhpOffice\UltimateSpreadSheet\Cell\DataType;
 use PHPUnit\Framework\TestCase;
 
 class DataTypeTest extends TestCase

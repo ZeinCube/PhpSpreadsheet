@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Reader;
 
-use PhpOffice\PhpSpreadsheet\Reader\Csv;
+use PhpOffice\UltimateSpreadSheet\Reader\Csv;
 use PHPUnit\Framework\TestCase;
 
 class CsvTest extends TestCase

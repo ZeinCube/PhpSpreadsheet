@@ -2,9 +2,9 @@
 
 namespace Samples\Sample14;
 
-use PhpOffice\PhpSpreadsheet\IOFactory;
-use PhpOffice\PhpSpreadsheet\Reader\IReadFilter;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\IOFactory;
+use PhpOffice\UltimateSpreadSheet\Reader\IReadFilter;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 require __DIR__ . '/../Header.php';
 
@@ -55,7 +55,7 @@ $chunkFilter = new ChunkReadFilter();
 $reader->setReadFilter($chunkFilter)
     ->setContiguous(true);
 
-// Instantiate a new PhpSpreadsheet object manually
+// Instantiate a new UltimateSpreadSheet object manually
 $spreadsheet = new Spreadsheet();
 
 // Set a sheet index
@@ -69,7 +69,7 @@ for ($startRow = 2; $startRow <= 240; $startRow += $chunkSize) {
 
     // Increment the worksheet index pointer for the Reader
     $reader->setSheetIndex($sheet);
-    // Load only the rows that match our filter into a new worksheet in the PhpSpreadsheet Object
+    // Load only the rows that match our filter into a new worksheet in the UltimateSpreadSheet Object
     $reader->loadIntoExisting($inputFileName, $spreadsheet);
     // Set the worksheet title (to reference the "sheet" of data that we've loaded)
     // and increment the sheet index as well

@@ -2,22 +2,22 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Functional;
 
-use PhpOffice\PhpSpreadsheet\Cell\Hyperlink;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Worksheet\MemoryDrawing;
+use PhpOffice\UltimateSpreadSheet\Cell\Hyperlink;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Worksheet\MemoryDrawing;
 
 class DrawingImageHyperlinkTest extends AbstractFunctional
 {
     public function testDrawingImageHyperlinkTest()
     {
-        $baseUrl = 'https://github.com/PHPOffice/PhpSpreadsheet';
+        $baseUrl = 'https://github.com/PHPOffice/UltimateSpreadSheet';
         $spreadsheet = new Spreadsheet();
 
         $aSheet = $spreadsheet->getActiveSheet();
 
         $gdImage = @imagecreatetruecolor(120, 20);
         $textColor = imagecolorallocate($gdImage, 255, 255, 255);
-        imagestring($gdImage, 1, 5, 5, 'Created with PhpSpreadsheet', $textColor);
+        imagestring($gdImage, 1, 5, 5, 'Created with UltimateSpreadSheet', $textColor);
 
         $drawing = new MemoryDrawing();
         $drawing->setName('In-Memory image 1');
@@ -36,7 +36,7 @@ class DrawingImageHyperlinkTest extends AbstractFunctional
         $reloadedSpreadsheet = $this->writeAndReload($spreadsheet, 'Xlsx');
 
         foreach ($reloadedSpreadsheet->getActiveSheet()->getDrawingCollection() as $pDrawing) {
-            self::assertEquals('https://github.com/PHPOffice/PhpSpreadsheet', $pDrawing->getHyperlink()->getUrl(), 'functional test drawing hyperlink');
+            self::assertEquals('https://github.com/PHPOffice/UltimateSpreadSheet', $pDrawing->getHyperlink()->getUrl(), 'functional test drawing hyperlink');
         }
     }
 }

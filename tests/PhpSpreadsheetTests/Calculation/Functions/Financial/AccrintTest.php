@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Financial;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Financial;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\UltimateSpreadSheet\Calculation\Financial;
+use PhpOffice\UltimateSpreadSheet\Calculation\Functions;
 use PHPUnit\Framework\TestCase;
 
 class AccrintTest extends TestCase

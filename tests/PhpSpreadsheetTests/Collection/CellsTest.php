@@ -2,11 +2,11 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Collection;
 
-use PhpOffice\PhpSpreadsheet\Cell\Cell;
-use PhpOffice\PhpSpreadsheet\Collection\Cells;
-use PhpOffice\PhpSpreadsheet\Collection\Memory;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use PhpOffice\UltimateSpreadSheet\Cell\Cell;
+use PhpOffice\UltimateSpreadSheet\Collection\Cells;
+use PhpOffice\UltimateSpreadSheet\Collection\Memory;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Worksheet\Worksheet;
 use PHPUnit\Framework\TestCase;
 
 class CellsTest extends TestCase
@@ -87,7 +87,7 @@ class CellsTest extends TestCase
 
     public function testThrowsWhenCellCannotBeRetrievedFromCache()
     {
-        $this->expectException(\PhpOffice\PhpSpreadsheet\Exception::class);
+        $this->expectException(\PhpOffice\UltimateSpreadSheet\Exception::class);
 
         $collection = $this->getMockBuilder(Cells::class)
             ->setConstructorArgs([new Worksheet(), new Memory()])
@@ -102,7 +102,7 @@ class CellsTest extends TestCase
 
     public function testThrowsWhenCellCannotBeStoredInCache()
     {
-        $this->expectException(\PhpOffice\PhpSpreadsheet\Exception::class);
+        $this->expectException(\PhpOffice\UltimateSpreadSheet\Exception::class);
 
         $cache = $this->createMock(Memory::class);
         $cell = $this->createMock(Cell::class);

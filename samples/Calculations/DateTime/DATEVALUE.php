@@ -1,12 +1,12 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 require __DIR__ . '/../../Header.php';
 
 $helper->log('Converts a date in the form of text to a serial number.');
 
-// Create new PhpSpreadsheet object
+// Create new UltimateSpreadSheet object
 $spreadsheet = new Spreadsheet();
 $worksheet = $spreadsheet->getActiveSheet();
 
@@ -29,7 +29,7 @@ $worksheet->getStyle('C1:C' . $testDateCount)
     ->setFormatCode('yyyy-mmm-dd');
 
 // Test the formulae
-$helper->log('<strong>Warning: </strong>The PhpSpreadsheet DATEVALUE() function accepts a wider range of date formats than MS Excel DATEFORMAT() function.');
+$helper->log('<strong>Warning: </strong>The UltimateSpreadSheet DATEVALUE() function accepts a wider range of date formats than MS Excel DATEFORMAT() function.');
 for ($row = 1; $row <= $testDateCount; ++$row) {
     $helper->log('Date String: ' . $worksheet->getCell('A' . $row)->getFormattedValue());
     $helper->log('Formula: ' . $worksheet->getCell('B' . $row)->getValue());

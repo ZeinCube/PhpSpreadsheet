@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Shared;
 
-use PhpOffice\PhpSpreadsheet\Shared\Date;
+use PhpOffice\UltimateSpreadSheet\Shared\Date;
 use PHPUnit\Framework\TestCase;
 
 class DateTest extends TestCase

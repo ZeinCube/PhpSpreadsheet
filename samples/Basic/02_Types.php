@@ -1,10 +1,10 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\RichText\RichText;
-use PhpOffice\PhpSpreadsheet\Shared\Date;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Style\Color;
-use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
+use PhpOffice\UltimateSpreadSheet\RichText\RichText;
+use PhpOffice\UltimateSpreadSheet\Shared\Date;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Style\Color;
+use PhpOffice\UltimateSpreadSheet\Style\NumberFormat;
 
 require __DIR__ . '/../Header.php';
 
@@ -35,7 +35,7 @@ $helper->log('Add some data');
 $spreadsheet->getActiveSheet()
     ->setCellValue('A1', 'String')
     ->setCellValue('B1', 'Simple')
-    ->setCellValue('C1', 'PhpSpreadsheet');
+    ->setCellValue('C1', 'UltimateSpreadSheet');
 
 $spreadsheet->getActiveSheet()
     ->setCellValue('A2', 'String')
@@ -134,12 +134,12 @@ $spreadsheet->getActiveSheet()
 $spreadsheet->getActiveSheet()->setCellValue('A17', 'Hyperlink');
 
 $spreadsheet->getActiveSheet()
-    ->setCellValue('C17', 'PhpSpreadsheet Web Site');
+    ->setCellValue('C17', 'UltimateSpreadSheet Web Site');
 $spreadsheet->getActiveSheet()
     ->getCell('C17')
     ->getHyperlink()
-    ->setUrl('https://github.com/PHPOffice/PhpSpreadsheet')
-    ->setTooltip('Navigate to PhpSpreadsheet website');
+    ->setUrl('https://github.com/PHPOffice/UltimateSpreadSheet')
+    ->setTooltip('Navigate to UltimateSpreadSheet website');
 
 $spreadsheet->getActiveSheet()
     ->setCellValue('C18', '=HYPERLINK("mailto:abc@def.com","abc@def.com")');

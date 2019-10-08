@@ -1,11 +1,11 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 require __DIR__ . '/../../Header.php';
 $helper->log('Estimates variance based on a sample from selected database entries.');
 
-// Create new PhpSpreadsheet object
+// Create new UltimateSpreadSheet object
 $spreadsheet = new Spreadsheet();
 $worksheet = $spreadsheet->getActiveSheet();
 

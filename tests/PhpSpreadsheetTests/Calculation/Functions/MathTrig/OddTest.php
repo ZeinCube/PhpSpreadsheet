@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\MathTrig;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\MathTrig;
+use PhpOffice\UltimateSpreadSheet\Calculation\Functions;
+use PhpOffice\UltimateSpreadSheet\Calculation\MathTrig;
 use PHPUnit\Framework\TestCase;
 
 class OddTest extends TestCase

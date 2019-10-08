@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Cell;
 
-use PhpOffice\PhpSpreadsheet\Cell\DefaultValueBinder;
+use PhpOffice\UltimateSpreadSheet\Cell\DefaultValueBinder;
 
 class ValueBinderWithOverriddenDataTypeForValue extends DefaultValueBinder
 {

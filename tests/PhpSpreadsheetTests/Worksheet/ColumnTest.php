@@ -2,9 +2,9 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Worksheet;
 
-use PhpOffice\PhpSpreadsheet\Worksheet\Column;
-use PhpOffice\PhpSpreadsheet\Worksheet\ColumnCellIterator;
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use PhpOffice\UltimateSpreadSheet\Worksheet\Column;
+use PhpOffice\UltimateSpreadSheet\Worksheet\ColumnCellIterator;
+use PhpOffice\UltimateSpreadSheet\Worksheet\Worksheet;
 use PHPUnit\Framework\TestCase;
 
 class ColumnTest extends TestCase

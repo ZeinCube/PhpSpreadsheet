@@ -1,11 +1,11 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 require __DIR__ . '/../../Header.php';
 $helper->log('Counts the cells that contain numbers in a database.');
 
-// Create new PhpSpreadsheet object
+// Create new UltimateSpreadSheet object
 $spreadsheet = new Spreadsheet();
 $worksheet = $spreadsheet->getActiveSheet();
 

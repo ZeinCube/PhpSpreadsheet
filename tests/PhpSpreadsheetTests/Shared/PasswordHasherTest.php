@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Shared;
 
-use PhpOffice\PhpSpreadsheet\Shared\PasswordHasher;
+use PhpOffice\UltimateSpreadSheet\Shared\PasswordHasher;
 use PHPUnit\Framework\TestCase;
 
 class PasswordHasherTest extends TestCase

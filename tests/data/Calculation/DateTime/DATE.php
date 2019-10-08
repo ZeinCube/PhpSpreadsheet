@@ -289,17 +289,17 @@ return [
         40329,
         2010, 5, 31,
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         40199,
         2010, 1, '21st',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         40258,
         2010, 'March', '21st',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         40258,
         2010, 'March', 21,

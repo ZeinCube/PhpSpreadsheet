@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\Engineering;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Engineering;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
+use PhpOffice\UltimateSpreadSheet\Calculation\Engineering;
+use PhpOffice\UltimateSpreadSheet\Calculation\Functions;
 use PHPUnit\Framework\TestCase;
 
 class ImArgumentTest extends TestCase

@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Shared;
 
-use PhpOffice\PhpSpreadsheet\Shared\File;
+use PhpOffice\UltimateSpreadSheet\Shared\File;
 use PHPUnit\Framework\TestCase;
 
 class FileTest extends TestCase

@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Shared;
 
-use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
+use PhpOffice\UltimateSpreadSheet\Shared\StringHelper;
 use PHPUnit\Framework\TestCase;
 
 class StringHelperTest extends TestCase

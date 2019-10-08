@@ -1,7 +1,7 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Document\Properties;
-use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\UltimateSpreadSheet\Document\Properties;
+use PhpOffice\UltimateSpreadSheet\IOFactory;
 
 require __DIR__ . '/../Header.php';
 
@@ -16,7 +16,7 @@ $helper->logRead($inputFileType, $inputFileName, $callStartTime);
 $helper->log('Adjust properties');
 $spreadsheet->getProperties()->setTitle('Office 2007 XLSX Test Document')
     ->setSubject('Office 2007 XLSX Test Document')
-    ->setDescription('Test XLSX document, generated using PhpSpreadsheet')
+    ->setDescription('Test XLSX document, generated using UltimateSpreadSheet')
     ->setKeywords('office 2007 openxml php');
 
 // Save Excel 2007 file

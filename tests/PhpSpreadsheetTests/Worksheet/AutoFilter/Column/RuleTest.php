@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Worksheet\AutoFilter\Column;
 
-use PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column;
+use PhpOffice\UltimateSpreadSheet\Worksheet\AutoFilter\Column;
 use PHPUnit\Framework\TestCase;
 
 class RuleTest extends TestCase

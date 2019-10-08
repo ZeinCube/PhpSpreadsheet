@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Shared;
 
-use PhpOffice\PhpSpreadsheet\Shared\TimeZone;
+use PhpOffice\UltimateSpreadSheet\Shared\TimeZone;
 use PHPUnit\Framework\TestCase;
 
 class TimeZoneTest extends TestCase

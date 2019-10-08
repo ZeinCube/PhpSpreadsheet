@@ -2,9 +2,9 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Worksheet;
 
-use PhpOffice\PhpSpreadsheet\Worksheet\Row;
-use PhpOffice\PhpSpreadsheet\Worksheet\RowCellIterator;
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use PhpOffice\UltimateSpreadSheet\Worksheet\Row;
+use PhpOffice\UltimateSpreadSheet\Worksheet\RowCellIterator;
+use PhpOffice\UltimateSpreadSheet\Worksheet\Worksheet;
 use PHPUnit\Framework\TestCase;
 
 class RowTest extends TestCase

@@ -2,9 +2,9 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\TextData;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\TextData;
-use PhpOffice\PhpSpreadsheet\Shared\StringHelper;
+use PhpOffice\UltimateSpreadSheet\Calculation\Functions;
+use PhpOffice\UltimateSpreadSheet\Calculation\TextData;
+use PhpOffice\UltimateSpreadSheet\Shared\StringHelper;
 use PHPUnit\Framework\TestCase;
 
 class TextJoinTest extends TestCase

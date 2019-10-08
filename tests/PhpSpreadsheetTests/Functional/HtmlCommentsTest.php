@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Functional;
 
-use PhpOffice\PhpSpreadsheet\RichText\RichText;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\RichText\RichText;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 class HtmlCommentsTest extends AbstractFunctional
 {

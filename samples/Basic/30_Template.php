@@ -1,7 +1,7 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\IOFactory;
-use PhpOffice\PhpSpreadsheet\Shared\Date;
+use PhpOffice\UltimateSpreadSheet\IOFactory;
+use PhpOffice\UltimateSpreadSheet\Shared\Date;
 
 require __DIR__ . '/../Header.php';
 

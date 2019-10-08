@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Worksheet;
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Worksheet\MemoryDrawing;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Worksheet\MemoryDrawing;
 use PHPUnit\Framework\TestCase;
 
 class DrawingTest extends TestCase
@@ -15,7 +15,7 @@ class DrawingTest extends TestCase
 
         $gdImage = @imagecreatetruecolor(120, 20);
         $textColor = imagecolorallocate($gdImage, 255, 255, 255);
-        imagestring($gdImage, 1, 5, 5, 'Created with PhpSpreadsheet', $textColor);
+        imagestring($gdImage, 1, 5, 5, 'Created with UltimateSpreadSheet', $textColor);
 
         $drawing = new MemoryDrawing();
         $drawing->setName('In-Memory image 1');

@@ -1,7 +1,7 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Calculation\Calculation;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 mt_srand(1234567890);
 
@@ -165,7 +165,7 @@ for ($col = 'B'; $col != 'G'; ++$col) {
 }
 
 //
-//  If we set Pre Calculated Formulas to true then PhpSpreadsheet will calculate all formulae in the
+//  If we set Pre Calculated Formulas to true then UltimateSpreadSheet will calculate all formulae in the
 //    workbook before saving. This adds time and memory overhead, and can cause some problems with formulae
 //    using functions or features (such as array formulae) that aren't yet supported by the calculation engine
 //  If the value is false (the default) for the Xlsx Writer, then MS Excel (or the application used to
