@@ -253,6 +253,7 @@ abstract class Coordinate
      */
     public static function columnIndexFromString($pString)
     {
+        $pString = str_replace( '$', '', $pString);
         //    Using a lookup cache adds a slight memory overhead, but boosts speed
         //    caching using a static within the method is faster than a class static,
         //        though it's additional memory overhead
