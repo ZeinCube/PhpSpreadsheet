@@ -2,9 +2,9 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Worksheet;
 
-use PhpOffice\PhpSpreadsheet\Worksheet\Row;
-use PhpOffice\PhpSpreadsheet\Worksheet\RowIterator;
-use PhpOffice\PhpSpreadsheet\Worksheet\Worksheet;
+use PhpOffice\UltimateSpreadSheet\Worksheet\Row;
+use PhpOffice\UltimateSpreadSheet\Worksheet\RowIterator;
+use PhpOffice\UltimateSpreadSheet\Worksheet\Worksheet;
 use PHPUnit\Framework\TestCase;
 
 class RowIteratorTest extends TestCase
@@ -67,7 +67,7 @@ class RowIteratorTest extends TestCase
 
     public function testSeekOutOfRange()
     {
-        $this->expectException(\PhpOffice\PhpSpreadsheet\Exception::class);
+        $this->expectException(\PhpOffice\UltimateSpreadSheet\Exception::class);
 
         $iterator = new RowIterator($this->mockWorksheet, 2, 4);
         $iterator->seek(1);

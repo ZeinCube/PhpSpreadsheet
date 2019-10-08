@@ -1,7 +1,7 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Worksheet\MemoryDrawing;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Worksheet\MemoryDrawing;
 
 require __DIR__ . '/../Header.php';
 
@@ -23,7 +23,7 @@ $spreadsheet->getProperties()->setCreator('Maarten Balliauw')
 $helper->log('Generate an image');
 $gdImage = @imagecreatetruecolor(120, 20) or die('Cannot Initialize new GD image stream');
 $textColor = imagecolorallocate($gdImage, 255, 255, 255);
-imagestring($gdImage, 1, 5, 5, 'Created with PhpSpreadsheet', $textColor);
+imagestring($gdImage, 1, 5, 5, 'Created with UltimateSpreadSheet', $textColor);
 
 // Add a drawing to the worksheet
 $helper->log('Add a drawing to the worksheet');

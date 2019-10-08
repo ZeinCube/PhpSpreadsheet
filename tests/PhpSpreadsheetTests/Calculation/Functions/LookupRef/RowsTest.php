@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Calculation\Functions\LookupRef;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Calculation\LookupRef;
+use PhpOffice\UltimateSpreadSheet\Calculation\Functions;
+use PhpOffice\UltimateSpreadSheet\Calculation\LookupRef;
 use PHPUnit\Framework\TestCase;
 
 class RowsTest extends TestCase

@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests;
 
-use PhpOffice\PhpSpreadsheet\Settings;
+use PhpOffice\UltimateSpreadSheet\Settings;
 use PHPUnit\Framework\TestCase;
 
 class SettingsTest extends TestCase

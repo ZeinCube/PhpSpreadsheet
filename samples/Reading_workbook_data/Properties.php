@@ -1,6 +1,6 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\UltimateSpreadSheet\IOFactory;
 
 require __DIR__ . '/../Header.php';
 
@@ -9,7 +9,7 @@ $inputFileName = __DIR__ . '/sampleData/example1.xls';
 
 // Create a new Reader of the type defined in $inputFileType
 $reader = IOFactory::createReader($inputFileType);
-// Load $inputFileName to a PhpSpreadsheet Object
+// Load $inputFileName to a UltimateSpreadSheet Object
 $spreadsheet = $reader->load($inputFileName);
 
 // Read the document's creator property
@@ -61,4 +61,4 @@ $helper->log('<b>Company: </b>' . $company);
 // Read the workbook manager property
 $manager = $spreadsheet->getProperties()->getManager();
 $helper->log('<b>Manager: </b>' . $manager);
-$s = new \PhpOffice\PhpSpreadsheet\Helper\Sample();
+$s = new \PhpOffice\UltimateSpreadSheet\Helper\Sample();

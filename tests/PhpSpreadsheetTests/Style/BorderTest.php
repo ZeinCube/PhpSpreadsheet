@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Style;
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Style\Border;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Style\Border;
 use PHPUnit\Framework\TestCase;
 
 class BorderTest extends TestCase

@@ -23,7 +23,7 @@ return [
         '#VALUE!',
         '29-02-1900',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         '#VALUE!',
         '29th February 1900',
@@ -48,7 +48,7 @@ return [
         1462,
         '1-Jan-1904',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         1463,
         '2nd-Jan-1904',
@@ -57,7 +57,7 @@ return [
         22269,
         '19-12-1960',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         25569,
         '1st January 1970',
@@ -78,7 +78,7 @@ return [
         39601,
         '2-6-2008',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         39807,
         'December 25th 2008',
@@ -92,7 +92,7 @@ return [
         39813,
         '12-31-2008',
     ],
-    // PhpSpreadsheet tries to handle both US and UK formats, irrespective of country settings
+    // UltimateSpreadSheet tries to handle both US and UK formats, irrespective of country settings
     [
         39813,
         '31-12-2008',
@@ -102,7 +102,7 @@ return [
         39682,
         '8/22/2008',
     ],
-    // PhpSpreadsheet tries to handle both US and UK formats, irrespective of country settings
+    // UltimateSpreadSheet tries to handle both US and UK formats, irrespective of country settings
     [
         39682,
         '22/8/2008',
@@ -128,12 +128,12 @@ return [
         39141,
         '28-2-2007',
     ],
-    // PhpSpreadsheet tries to handle both US and UK formats, irrespective of country settings
+    // UltimateSpreadSheet tries to handle both US and UK formats, irrespective of country settings
     [
         39141,
         '2-28-2007',
     ],
-    // Should fail because it's an invalid date, but PhpSpreadsheet currently adjusts to 1-3-2007 - FIX NEEDED
+    // Should fail because it's an invalid date, but UltimateSpreadSheet currently adjusts to 1-3-2007 - FIX NEEDED
     [
         '#VALUE!',
         '29-2-2007',
@@ -150,7 +150,7 @@ return [
         36029,
         '22 August 98',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         39142,
         '1st March 2007',
@@ -220,17 +220,17 @@ return [
         40221,
         '12-Feb-2010',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         40221,
         'Feb-12-2010',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         40221,
         'February-12-2010',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         40221,
         'February 12 2010',
@@ -239,22 +239,22 @@ return [
         40227,
         '18 Feb 2010',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         40254,
         '17th 3rd 2010',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         40227,
         'Feb 18th 2010',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         40210,
         '1st Feb 2010',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         40210,
         '1st-Feb-2010',
@@ -263,12 +263,12 @@ return [
         '#VALUE!',
         '1me Fev 2010',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         40210,
         'February 1st 2010',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         40211,
         '2nd Feb 2010',
@@ -281,7 +281,7 @@ return [
         '#VALUE!',
         'First August 2010',
     ],
-    // MS Excel will fail with a #VALUE return, but PhpSpreadsheet can parse this date
+    // MS Excel will fail with a #VALUE return, but UltimateSpreadSheet can parse this date
     [
         40391,
         '1st August 2010',

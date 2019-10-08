@@ -1,6 +1,6 @@
 <?php
 /**
- * @copyright   Copyright (C) 2011-2014 PhpSpreadsheet. All rights reserved.
+ * @copyright   Copyright (C) 2011-2014 UltimateSpreadSheet. All rights reserved.
  * @author      Mark Baker
  */
 chdir(__DIR__);

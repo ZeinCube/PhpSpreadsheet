@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Functional;
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 class ConditionalStopIfTrueTest extends AbstractFunctional
 {
@@ -26,27 +26,27 @@ class ConditionalStopIfTrueTest extends AbstractFunctional
         $pCoordinate = 'A1:A3';
 
         // if blank cell -> no styling
-        $condition0 = new \PhpOffice\PhpSpreadsheet\Style\Conditional();
-        $condition0->setConditionType(\PhpOffice\PhpSpreadsheet\Style\Conditional::CONDITION_EXPRESSION);
+        $condition0 = new \PhpOffice\UltimateSpreadSheet\Style\Conditional();
+        $condition0->setConditionType(\PhpOffice\UltimateSpreadSheet\Style\Conditional::CONDITION_EXPRESSION);
         $condition0->addCondition('LEN(TRIM(A1))=0');
         $condition0->setStopIfTrue(true); // ! stop here
 
         // if value below 0.6 (matches also blank cells!) -> red background
-        $condition1 = new \PhpOffice\PhpSpreadsheet\Style\Conditional();
-        $condition1->setConditionType(\PhpOffice\PhpSpreadsheet\Style\Conditional::CONDITION_CELLIS);
-        $condition1->setOperatorType(\PhpOffice\PhpSpreadsheet\Style\Conditional::OPERATOR_LESSTHAN);
+        $condition1 = new \PhpOffice\UltimateSpreadSheet\Style\Conditional();
+        $condition1->setConditionType(\PhpOffice\UltimateSpreadSheet\Style\Conditional::CONDITION_CELLIS);
+        $condition1->setOperatorType(\PhpOffice\UltimateSpreadSheet\Style\Conditional::OPERATOR_LESSTHAN);
         $condition1->addCondition(0.6);
         $condition1->getStyle()->getFill()
-            ->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)
+            ->setFillType(\PhpOffice\UltimateSpreadSheet\Style\Fill::FILL_SOLID)
             ->getEndColor()->setARGB(self::COLOR_RED);
 
         // if value above 0.6 -> green background
-        $condition2 = new \PhpOffice\PhpSpreadsheet\Style\Conditional();
-        $condition2->setConditionType(\PhpOffice\PhpSpreadsheet\Style\Conditional::CONDITION_CELLIS);
-        $condition2->setOperatorType(\PhpOffice\PhpSpreadsheet\Style\Conditional::OPERATOR_GREATERTHAN);
+        $condition2 = new \PhpOffice\UltimateSpreadSheet\Style\Conditional();
+        $condition2->setConditionType(\PhpOffice\UltimateSpreadSheet\Style\Conditional::CONDITION_CELLIS);
+        $condition2->setOperatorType(\PhpOffice\UltimateSpreadSheet\Style\Conditional::OPERATOR_GREATERTHAN);
         $condition2->addCondition(0.6);
         $condition2->getStyle()->getFill()
-            ->setFillType(\PhpOffice\PhpSpreadsheet\Style\Fill::FILL_SOLID)
+            ->setFillType(\PhpOffice\UltimateSpreadSheet\Style\Fill::FILL_SOLID)
             ->getEndColor()->setARGB(self::COLOR_GREEN);
 
         $spreadsheet = new Spreadsheet();

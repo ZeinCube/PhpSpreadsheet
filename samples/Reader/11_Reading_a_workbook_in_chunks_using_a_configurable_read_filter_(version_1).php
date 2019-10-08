@@ -2,8 +2,8 @@
 
 namespace Samples\Sample09;
 
-use PhpOffice\PhpSpreadsheet\IOFactory;
-use PhpOffice\PhpSpreadsheet\Reader\IReadFilter;
+use PhpOffice\UltimateSpreadSheet\IOFactory;
+use PhpOffice\UltimateSpreadSheet\Reader\IReadFilter;
 
 require __DIR__ . '/../Header.php';
 
@@ -54,7 +54,7 @@ for ($startRow = 2; $startRow <= 240; $startRow += $chunkSize) {
     $chunkFilter = new ChunkReadFilter($startRow, $chunkSize);
     // Tell the Reader that we want to use the new Read Filter that we've just Instantiated
     $reader->setReadFilter($chunkFilter);
-    // Load only the rows that match our filter from $inputFileName to a PhpSpreadsheet Object
+    // Load only the rows that match our filter from $inputFileName to a UltimateSpreadSheet Object
     $spreadsheet = $reader->load($inputFileName);
 
     // Do some processing here

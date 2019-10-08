@@ -1,9 +1,9 @@
 <?php
 
-namespace PhpOffice\PhpSpreadsheet;
+namespace PhpOffice\UltimateSpreadSheet;
 
-use PhpOffice\PhpSpreadsheet\Reader\IReadFilter;
-use PhpOffice\PhpSpreadsheet\Writer\Xlsx;
+use PhpOffice\UltimateSpreadSheet\Reader\IReadFilter;
+use PhpOffice\UltimateSpreadSheet\Writer\Xlsx;
 
 require __DIR__ . '/../Header.php';
 

@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Reader;
 
-use PhpOffice\PhpSpreadsheet\Reader\Xls;
+use PhpOffice\UltimateSpreadSheet\Reader\Xls;
 use PHPUnit\Framework\TestCase;
 
 class XlsTest extends TestCase

@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Cell;
 
-use PhpOffice\PhpSpreadsheet\Cell\Hyperlink;
+use PhpOffice\UltimateSpreadSheet\Cell\Hyperlink;
 use PHPUnit\Framework\TestCase;
 
 class HyperlinkTest extends TestCase
@@ -20,7 +20,7 @@ class HyperlinkTest extends TestCase
     public function testSetUrl()
     {
         $initialUrlValue = 'https://www.example.com';
-        $newUrlValue = 'http://github.com/PHPOffice/PhpSpreadsheet';
+        $newUrlValue = 'http://github.com/PHPOffice/UltimateSpreadSheet';
 
         $testInstance = new Hyperlink($initialUrlValue);
         $result = $testInstance->setUrl($newUrlValue);
@@ -32,7 +32,7 @@ class HyperlinkTest extends TestCase
 
     public function testGetTooltip()
     {
-        $tooltipValue = 'PhpSpreadsheet Web Site';
+        $tooltipValue = 'UltimateSpreadSheet Web Site';
 
         $testInstance = new Hyperlink(null, $tooltipValue);
 
@@ -42,8 +42,8 @@ class HyperlinkTest extends TestCase
 
     public function testSetTooltip()
     {
-        $initialTooltipValue = 'PhpSpreadsheet Web Site';
-        $newTooltipValue = 'PhpSpreadsheet Repository on Github';
+        $initialTooltipValue = 'UltimateSpreadSheet Web Site';
+        $newTooltipValue = 'UltimateSpreadSheet Repository on Github';
 
         $testInstance = new Hyperlink(null, $initialTooltipValue);
         $result = $testInstance->setTooltip($newTooltipValue);
@@ -70,7 +70,7 @@ class HyperlinkTest extends TestCase
     public function testGetHashCode()
     {
         $urlValue = 'https://www.example.com';
-        $tooltipValue = 'PhpSpreadsheet Web Site';
+        $tooltipValue = 'UltimateSpreadSheet Web Site';
         $initialExpectedHash = '3a8d5a682dba27276dce538c39402437';
 
         $testInstance = new Hyperlink($urlValue, $tooltipValue);

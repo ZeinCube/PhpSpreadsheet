@@ -1,6 +1,6 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\UltimateSpreadSheet\IOFactory;
 
 require __DIR__ . '/../Header.php';
 
@@ -14,7 +14,7 @@ $helper->write($spreadsheet, __FILE__, ['Xlsx', 'Xls', 'Html']);
 
 // Export to PDF (.pdf)
 $helper->log('Write to PDF format');
-IOFactory::registerWriter('Pdf', \PhpOffice\PhpSpreadsheet\Writer\Pdf\Dompdf::class);
+IOFactory::registerWriter('Pdf', \PhpOffice\UltimateSpreadSheet\Writer\Pdf\Dompdf::class);
 $helper->write($spreadsheet, __FILE__, ['Pdf']);
 
 // Remove first two rows with field headers before exporting to CSV
@@ -24,7 +24,7 @@ $worksheet->removeRow(1, 2);
 
 // Export to CSV (.csv)
 $helper->log('Write to CSV format');
-/** @var \PhpOffice\PhpSpreadsheet\Writer\Csv $writer */
+/** @var \PhpOffice\UltimateSpreadSheet\Writer\Csv $writer */
 $writer = IOFactory::createWriter($spreadsheet, 'Csv');
 $filename = $helper->getFilename(__FILE__, 'csv');
 $callStartTime = microtime(true);

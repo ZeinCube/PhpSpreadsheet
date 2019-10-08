@@ -1,7 +1,7 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Document\Properties;
-use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\UltimateSpreadSheet\Document\Properties;
+use PhpOffice\UltimateSpreadSheet\IOFactory;
 
 require __DIR__ . '/../Header.php';
 
@@ -16,7 +16,7 @@ $helper->logRead($inputFileType, $inputFileName, $callStartTime);
 $helper->log('Adjust properties');
 $spreadsheet->getProperties()->setTitle('Office 95 XLS Test Document')
     ->setSubject('Office 95 XLS Test Document')
-    ->setDescription('Test XLS document, generated using PhpSpreadsheet')
+    ->setDescription('Test XLS document, generated using UltimateSpreadSheet')
     ->setKeywords('office 95 biff php');
 
 // Save Excel 95 file

@@ -69,7 +69,7 @@ return [
     ],
     [
         '#VALUE!',
-        'PhpSpreadsheet',
+        'UltimateSpreadSheet',
     ],
     [
         211.0,

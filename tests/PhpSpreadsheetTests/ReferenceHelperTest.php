@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests;
 
-use PhpOffice\PhpSpreadsheet\ReferenceHelper;
+use PhpOffice\UltimateSpreadSheet\ReferenceHelper;
 use PHPUnit\Framework\TestCase;
 
 class ReferenceHelperTest extends TestCase

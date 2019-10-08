@@ -1,6 +1,6 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 require __DIR__ . '/../Header.php';
 
@@ -12,10 +12,10 @@ $spreadsheet = new Spreadsheet();
 $helper->log('Set document properties');
 $spreadsheet->getProperties()->setCreator('Maarten Balliauw')
     ->setLastModifiedBy('Maarten Balliauw')
-    ->setTitle('PhpSpreadsheet Test Document')
-    ->setSubject('PhpSpreadsheet Test Document')
-    ->setDescription('Test document for PhpSpreadsheet, generated using PHP classes.')
-    ->setKeywords('office PhpSpreadsheet php')
+    ->setTitle('UltimateSpreadSheet Test Document')
+    ->setSubject('UltimateSpreadSheet Test Document')
+    ->setDescription('Test document for UltimateSpreadSheet, generated using PHP classes.')
+    ->setKeywords('office UltimateSpreadSheet php')
     ->setCategory('Test result file');
 
 // Add some data

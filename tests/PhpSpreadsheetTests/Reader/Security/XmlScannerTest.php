@@ -2,9 +2,9 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Reader\Security;
 
-use PhpOffice\PhpSpreadsheet\Reader\Security\XmlScanner;
-use PhpOffice\PhpSpreadsheet\Reader\Xls;
-use PhpOffice\PhpSpreadsheet\Reader\Xlsx;
+use PhpOffice\UltimateSpreadSheet\Reader\Security\XmlScanner;
+use PhpOffice\UltimateSpreadSheet\Reader\Xls;
+use PhpOffice\UltimateSpreadSheet\Reader\Xlsx;
 use PHPUnit\Framework\TestCase;
 
 class XmlScannerTest extends TestCase
@@ -25,7 +25,7 @@ class XmlScannerTest extends TestCase
     {
         $oldDisableEntityLoaderState = libxml_disable_entity_loader($libxmlDisableEntityLoader);
 
-        $reader = XmlScanner::getInstance(new \PhpOffice\PhpSpreadsheet\Reader\Xml());
+        $reader = XmlScanner::getInstance(new \PhpOffice\UltimateSpreadSheet\Reader\Xml());
         $result = $reader->scanFile($filename);
         self::assertEquals($expectedResult, $result);
 
@@ -53,11 +53,11 @@ class XmlScannerTest extends TestCase
      */
     public function testInvalidXML($filename, $libxmlDisableEntityLoader)
     {
-        $this->expectException(\PhpOffice\PhpSpreadsheet\Reader\Exception::class);
+        $this->expectException(\PhpOffice\UltimateSpreadSheet\Reader\Exception::class);
 
         libxml_disable_entity_loader($libxmlDisableEntityLoader);
 
-        $reader = XmlScanner::getInstance(new \PhpOffice\PhpSpreadsheet\Reader\Xml());
+        $reader = XmlScanner::getInstance(new \PhpOffice\UltimateSpreadSheet\Reader\Xml());
         $expectedResult = 'FAILURE: Should throw an Exception rather than return a value';
         $result = $reader->scanFile($filename);
         self::assertEquals($expectedResult, $result);

@@ -2,7 +2,7 @@
 /**
  * Header file.
  */
-use PhpOffice\PhpSpreadsheet\Helper\Sample;
+use PhpOffice\UltimateSpreadSheet\Helper\Sample;
 
 error_reporting(E_ALL);
 

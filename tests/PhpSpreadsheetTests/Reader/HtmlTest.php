@@ -2,11 +2,11 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Reader;
 
-use PhpOffice\PhpSpreadsheet\Reader\Html;
-use PhpOffice\PhpSpreadsheet\Style\Alignment;
-use PhpOffice\PhpSpreadsheet\Style\Border;
-use PhpOffice\PhpSpreadsheet\Style\Font;
-use PhpOffice\PhpSpreadsheet\Worksheet\Drawing;
+use PhpOffice\UltimateSpreadSheet\Reader\Html;
+use PhpOffice\UltimateSpreadSheet\Style\Alignment;
+use PhpOffice\UltimateSpreadSheet\Style\Border;
+use PhpOffice\UltimateSpreadSheet\Style\Font;
+use PhpOffice\UltimateSpreadSheet\Worksheet\Drawing;
 use PHPUnit\Framework\TestCase;
 
 class HtmlTest extends TestCase
@@ -345,7 +345,7 @@ class HtmlTest extends TestCase
     /**
      * @param $filename
      *
-     * @return \PhpOffice\PhpSpreadsheet\Spreadsheet
+     * @return \PhpOffice\UltimateSpreadSheet\Spreadsheet
      */
     private function loadHtmlIntoSpreadsheet($filename)
     {

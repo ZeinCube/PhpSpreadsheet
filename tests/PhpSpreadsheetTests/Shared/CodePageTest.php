@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Shared;
 
-use PhpOffice\PhpSpreadsheet\Exception;
-use PhpOffice\PhpSpreadsheet\Shared\CodePage;
+use PhpOffice\UltimateSpreadSheet\Exception;
+use PhpOffice\UltimateSpreadSheet\Shared\CodePage;
 use PHPUnit\Framework\TestCase;
 
 class CodePageTest extends TestCase

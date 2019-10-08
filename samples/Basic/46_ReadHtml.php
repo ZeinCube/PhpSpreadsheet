@@ -3,7 +3,7 @@
 // Turn off error reporting
 error_reporting(0);
 
-use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\UltimateSpreadSheet\IOFactory;
 
 require __DIR__ . '/../Header.php';
 

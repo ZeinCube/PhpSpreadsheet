@@ -1,7 +1,7 @@
 <?php
 
 // Create new Spreadsheet object
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 $helper->log('Create new Spreadsheet object');
 $spreadsheet = new Spreadsheet();

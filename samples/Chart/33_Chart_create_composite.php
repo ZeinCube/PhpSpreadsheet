@@ -1,13 +1,13 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Chart\Chart;
-use PhpOffice\PhpSpreadsheet\Chart\DataSeries;
-use PhpOffice\PhpSpreadsheet\Chart\DataSeriesValues;
-use PhpOffice\PhpSpreadsheet\Chart\Legend;
-use PhpOffice\PhpSpreadsheet\Chart\PlotArea;
-use PhpOffice\PhpSpreadsheet\Chart\Title;
-use PhpOffice\PhpSpreadsheet\IOFactory;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Chart\Chart;
+use PhpOffice\UltimateSpreadSheet\Chart\DataSeries;
+use PhpOffice\UltimateSpreadSheet\Chart\DataSeriesValues;
+use PhpOffice\UltimateSpreadSheet\Chart\Legend;
+use PhpOffice\UltimateSpreadSheet\Chart\PlotArea;
+use PhpOffice\UltimateSpreadSheet\Chart\Title;
+use PhpOffice\UltimateSpreadSheet\IOFactory;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 require __DIR__ . '/../Header.php';
 

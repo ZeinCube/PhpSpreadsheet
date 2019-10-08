@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Chart;
 
-use PhpOffice\PhpSpreadsheet\Chart\DataSeriesValues;
-use PhpOffice\PhpSpreadsheet\Exception;
+use PhpOffice\UltimateSpreadSheet\Chart\DataSeriesValues;
+use PhpOffice\UltimateSpreadSheet\Exception;
 use PHPUnit\Framework\TestCase;
 
 class DataSeriesValuesTest extends TestCase

@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Cell;
 
-use PhpOffice\PhpSpreadsheet\Cell\Coordinate;
-use PhpOffice\PhpSpreadsheet\Exception;
+use PhpOffice\UltimateSpreadSheet\Cell\Coordinate;
+use PhpOffice\UltimateSpreadSheet\Exception;
 use PHPUnit\Framework\TestCase;
 
 class CoordinateTest extends TestCase

@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Reader;
 
-use PhpOffice\PhpSpreadsheet\Cell\DataType;
-use PhpOffice\PhpSpreadsheet\Reader\Xml;
+use PhpOffice\UltimateSpreadSheet\Cell\DataType;
+use PhpOffice\UltimateSpreadSheet\Reader\Xml;
 use PHPUnit\Framework\TestCase;
 
 class XmlTest extends TestCase
@@ -15,7 +15,7 @@ class XmlTest extends TestCase
      */
     public function testInvalidSimpleXML($filename)
     {
-        $this->expectException(\PhpOffice\PhpSpreadsheet\Reader\Exception::class);
+        $this->expectException(\PhpOffice\UltimateSpreadSheet\Reader\Exception::class);
 
         $xmlReader = new Xml();
         $xmlReader->trySimpleXMLLoadString($filename);
@@ -43,7 +43,7 @@ class XmlTest extends TestCase
         $hyperlink = $firstSheet->getCell('L1');
 
         self::assertEquals(DataType::TYPE_STRING, $hyperlink->getDataType());
-        self::assertEquals('PhpSpreadsheet', $hyperlink->getValue());
+        self::assertEquals('UltimateSpreadSheet', $hyperlink->getValue());
         self::assertEquals('https://phpspreadsheet.readthedocs.io', $hyperlink->getHyperlink()->getUrl());
     }
 

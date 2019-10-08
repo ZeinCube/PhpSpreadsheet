@@ -1,9 +1,9 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Worksheet\HeaderFooter;
-use PhpOffice\PhpSpreadsheet\Worksheet\HeaderFooterDrawing;
-use PhpOffice\PhpSpreadsheet\Worksheet\PageSetup;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Worksheet\HeaderFooter;
+use PhpOffice\UltimateSpreadSheet\Worksheet\HeaderFooterDrawing;
+use PhpOffice\UltimateSpreadSheet\Worksheet\PageSetup;
 
 require __DIR__ . '/../Header.php';
 
@@ -40,7 +40,7 @@ $spreadsheet->getActiveSheet()
 // Add a drawing to the header
 $helper->log('Add a drawing to the header');
 $drawing = new HeaderFooterDrawing();
-$drawing->setName('PhpSpreadsheet logo');
+$drawing->setName('UltimateSpreadSheet logo');
 $drawing->setPath(__DIR__ . '/../images/PhpSpreadsheet_logo.png');
 $drawing->setHeight(36);
 $spreadsheet->getActiveSheet()

@@ -1,18 +1,18 @@
 <?php
 
 // Create new Spreadsheet object
-use PhpOffice\PhpSpreadsheet\RichText\RichText;
-use PhpOffice\PhpSpreadsheet\Shared\Date;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Style\Alignment;
-use PhpOffice\PhpSpreadsheet\Style\Border;
-use PhpOffice\PhpSpreadsheet\Style\Color;
-use PhpOffice\PhpSpreadsheet\Style\Fill;
-use PhpOffice\PhpSpreadsheet\Style\Font;
-use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
-use PhpOffice\PhpSpreadsheet\Style\Protection;
-use PhpOffice\PhpSpreadsheet\Worksheet\Drawing;
-use PhpOffice\PhpSpreadsheet\Worksheet\PageSetup;
+use PhpOffice\UltimateSpreadSheet\RichText\RichText;
+use PhpOffice\UltimateSpreadSheet\Shared\Date;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Style\Alignment;
+use PhpOffice\UltimateSpreadSheet\Style\Border;
+use PhpOffice\UltimateSpreadSheet\Style\Color;
+use PhpOffice\UltimateSpreadSheet\Style\Fill;
+use PhpOffice\UltimateSpreadSheet\Style\Font;
+use PhpOffice\UltimateSpreadSheet\Style\NumberFormat;
+use PhpOffice\UltimateSpreadSheet\Style\Protection;
+use PhpOffice\UltimateSpreadSheet\Worksheet\Drawing;
+use PhpOffice\UltimateSpreadSheet\Worksheet\PageSetup;
 
 $helper->log('Create new Spreadsheet object');
 $spreadsheet = new Spreadsheet();
@@ -70,20 +70,20 @@ $spreadsheet->getActiveSheet()->setCellValue('E13', '=E11+E12');
 // Add comment
 $helper->log('Add comments');
 
-$spreadsheet->getActiveSheet()->getComment('E11')->setAuthor('PhpSpreadsheet');
-$commentRichText = $spreadsheet->getActiveSheet()->getComment('E11')->getText()->createTextRun('PhpSpreadsheet:');
+$spreadsheet->getActiveSheet()->getComment('E11')->setAuthor('UltimateSpreadSheet');
+$commentRichText = $spreadsheet->getActiveSheet()->getComment('E11')->getText()->createTextRun('UltimateSpreadSheet:');
 $commentRichText->getFont()->setBold(true);
 $spreadsheet->getActiveSheet()->getComment('E11')->getText()->createTextRun("\r\n");
 $spreadsheet->getActiveSheet()->getComment('E11')->getText()->createTextRun('Total amount on the current invoice, excluding VAT.');
 
-$spreadsheet->getActiveSheet()->getComment('E12')->setAuthor('PhpSpreadsheet');
-$commentRichText = $spreadsheet->getActiveSheet()->getComment('E12')->getText()->createTextRun('PhpSpreadsheet:');
+$spreadsheet->getActiveSheet()->getComment('E12')->setAuthor('UltimateSpreadSheet');
+$commentRichText = $spreadsheet->getActiveSheet()->getComment('E12')->getText()->createTextRun('UltimateSpreadSheet:');
 $commentRichText->getFont()->setBold(true);
 $spreadsheet->getActiveSheet()->getComment('E12')->getText()->createTextRun("\r\n");
 $spreadsheet->getActiveSheet()->getComment('E12')->getText()->createTextRun('Total amount of VAT on the current invoice.');
 
-$spreadsheet->getActiveSheet()->getComment('E13')->setAuthor('PhpSpreadsheet');
-$commentRichText = $spreadsheet->getActiveSheet()->getComment('E13')->getText()->createTextRun('PhpSpreadsheet:');
+$spreadsheet->getActiveSheet()->getComment('E13')->setAuthor('UltimateSpreadSheet');
+$commentRichText = $spreadsheet->getActiveSheet()->getComment('E13')->getText()->createTextRun('UltimateSpreadSheet:');
 $commentRichText->getFont()->setBold(true);
 $spreadsheet->getActiveSheet()->getComment('E13')->getText()->createTextRun("\r\n");
 $spreadsheet->getActiveSheet()->getComment('E13')->getText()->createTextRun('Total amount on the current invoice, including VAT.');
@@ -114,7 +114,7 @@ $spreadsheet->getActiveSheet()->unmergeCells('A28:B28'); // Just to test...
 // Protect cells
 $helper->log('Protect cells');
 $spreadsheet->getActiveSheet()->getProtection()->setSheet(true); // Needs to be set to true in order to enable any worksheet protection!
-$spreadsheet->getActiveSheet()->protectCells('A3:E13', 'PhpSpreadsheet');
+$spreadsheet->getActiveSheet()->protectCells('A3:E13', 'UltimateSpreadSheet');
 
 // Set cell number formats
 $helper->log('Set cell number formats');
@@ -281,8 +281,8 @@ $drawing->setWorksheet($spreadsheet->getActiveSheet());
 // Add a drawing to the worksheet
 $helper->log('Add a drawing to the worksheet');
 $drawing = new Drawing();
-$drawing->setName('PhpSpreadsheet logo');
-$drawing->setDescription('PhpSpreadsheet logo');
+$drawing->setName('UltimateSpreadSheet logo');
+$drawing->setDescription('UltimateSpreadSheet logo');
 $drawing->setPath(__DIR__ . '/../images/PhpSpreadsheet_logo.png');
 $drawing->setHeight(36);
 $drawing->setCoordinates('D24');

@@ -1,6 +1,6 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 require __DIR__ . '/../Header.php';
 
@@ -34,11 +34,11 @@ $spreadsheet->getActiveSheet()->setTitle('Simple');
 $helper->log('Set document security');
 $spreadsheet->getSecurity()->setLockWindows(true);
 $spreadsheet->getSecurity()->setLockStructure(true);
-$spreadsheet->getSecurity()->setWorkbookPassword('PhpSpreadsheet');
+$spreadsheet->getSecurity()->setWorkbookPassword('UltimateSpreadSheet');
 
 // Set sheet security
 $helper->log('Set sheet security');
-$spreadsheet->getActiveSheet()->getProtection()->setPassword('PhpSpreadsheet');
+$spreadsheet->getActiveSheet()->getProtection()->setPassword('UltimateSpreadSheet');
 $spreadsheet->getActiveSheet()->getProtection()->setSheet(true); // This should be enabled in order to enable any of the following!
 $spreadsheet->getActiveSheet()->getProtection()->setSort(true);
 $spreadsheet->getActiveSheet()->getProtection()->setInsertRows(true);

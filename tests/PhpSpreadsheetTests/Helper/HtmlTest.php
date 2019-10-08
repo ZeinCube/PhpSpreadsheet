@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Helper;
 
-use PhpOffice\PhpSpreadsheet\Helper\Html;
+use PhpOffice\UltimateSpreadSheet\Helper\Html;
 use PHPUnit\Framework\TestCase;
 
 class HtmlTest extends TestCase

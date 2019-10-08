@@ -1,10 +1,10 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Shared\Date;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
-use PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column;
-use PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter\Column\Rule;
+use PhpOffice\UltimateSpreadSheet\Shared\Date;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Style\NumberFormat;
+use PhpOffice\UltimateSpreadSheet\Worksheet\AutoFilter\Column;
+use PhpOffice\UltimateSpreadSheet\Worksheet\AutoFilter\Column\Rule;
 
 require __DIR__ . '/../Header.php';
 
@@ -16,10 +16,10 @@ $spreadsheet = new Spreadsheet();
 $helper->log('Set document properties');
 $spreadsheet->getProperties()->setCreator('Maarten Balliauw')
     ->setLastModifiedBy('Maarten Balliauw')
-    ->setTitle('PhpSpreadsheet Test Document')
-    ->setSubject('PhpSpreadsheet Test Document')
-    ->setDescription('Test document for PhpSpreadsheet, generated using PHP classes.')
-    ->setKeywords('office PhpSpreadsheet php')
+    ->setTitle('UltimateSpreadSheet Test Document')
+    ->setSubject('UltimateSpreadSheet Test Document')
+    ->setDescription('Test document for UltimateSpreadSheet, generated using PHP classes.')
+    ->setKeywords('office UltimateSpreadSheet php')
     ->setCategory('Test result file');
 
 // Create the worksheet

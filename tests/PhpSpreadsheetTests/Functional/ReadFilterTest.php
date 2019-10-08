@@ -2,8 +2,8 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Functional;
 
-use PhpOffice\PhpSpreadsheet\Reader\IReadFilter;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Reader\IReadFilter;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 class ReadFilterTest extends AbstractFunctional
 {
@@ -92,13 +92,13 @@ class ReadFilterTest extends AbstractFunctional
     }
 
     /**
-     * @see \PhpOffice\PhpSpreadsheet\Reader\IReadFilter::readCell()
-     *
      * @param string $column Column address (as a string value like "A", or "IV")
      * @param int $row Row number
      * @param string $worksheetName Optional worksheet name
      *
      * @return bool
+     *@see \PhpOffice\UltimateSpreadSheet\Reader\IReadFilter::readCell()
+     *
      */
     public function readFilterReadCell($column, $row, $worksheetName = '')
     {

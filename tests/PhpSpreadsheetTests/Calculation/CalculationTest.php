@@ -2,9 +2,9 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Calculation;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Calculation;
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Calculation\Calculation;
+use PhpOffice\UltimateSpreadSheet\Calculation\Functions;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 use PHPUnit\Framework\TestCase;
 
 class CalculationTest extends TestCase
@@ -310,7 +310,7 @@ class CalculationTest extends TestCase
      * @param string[] $shouldNotBeSetInCacheCells coordinates of cells that must
      *  not be set in cache because of pruning
      *
-     * @throws \PhpOffice\PhpSpreadsheet\Exception
+     * @throws \PhpOffice\UltimateSpreadSheet\Exception
      * @dataProvider dataProviderBranchPruningFullExecution
      */
     public function testFullExecution(

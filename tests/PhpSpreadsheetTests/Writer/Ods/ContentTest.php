@@ -2,16 +2,16 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Writer\Ods\Content;
 
-use PhpOffice\PhpSpreadsheet\Calculation\Functions;
-use PhpOffice\PhpSpreadsheet\Cell\DataType;
-use PhpOffice\PhpSpreadsheet\Shared\Date;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Style\Color;
-use PhpOffice\PhpSpreadsheet\Style\Fill;
-use PhpOffice\PhpSpreadsheet\Style\Font;
-use PhpOffice\PhpSpreadsheet\Style\NumberFormat;
-use PhpOffice\PhpSpreadsheet\Writer\Ods;
-use PhpOffice\PhpSpreadsheet\Writer\Ods\Content;
+use PhpOffice\UltimateSpreadSheet\Calculation\Functions;
+use PhpOffice\UltimateSpreadSheet\Cell\DataType;
+use PhpOffice\UltimateSpreadSheet\Shared\Date;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Style\Color;
+use PhpOffice\UltimateSpreadSheet\Style\Fill;
+use PhpOffice\UltimateSpreadSheet\Style\Font;
+use PhpOffice\UltimateSpreadSheet\Style\NumberFormat;
+use PhpOffice\UltimateSpreadSheet\Writer\Ods;
+use PhpOffice\UltimateSpreadSheet\Writer\Ods\Content;
 use PHPUnit\Framework\TestCase;
 
 class ContentTest extends TestCase

@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Worksheet\AutoFilter;
 
-use PhpOffice\PhpSpreadsheet\Worksheet\AutoFilter;
+use PhpOffice\UltimateSpreadSheet\Worksheet\AutoFilter;
 use PHPUnit\Framework\TestCase;
 
 class ColumnTest extends TestCase
@@ -74,7 +74,7 @@ class ColumnTest extends TestCase
 
     public function testSetInvalidFilterTypeThrowsException()
     {
-        $this->expectException(\PhpOffice\PhpSpreadsheet\Exception::class);
+        $this->expectException(\PhpOffice\UltimateSpreadSheet\Exception::class);
 
         $expectedResult = 'Unfiltered';
 
@@ -98,7 +98,7 @@ class ColumnTest extends TestCase
 
     public function testSetInvalidJoinThrowsException()
     {
-        $this->expectException(\PhpOffice\PhpSpreadsheet\Exception::class);
+        $this->expectException(\PhpOffice\UltimateSpreadSheet\Exception::class);
 
         $expectedResult = 'Neither';
 

@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Shared;
 
-use PhpOffice\PhpSpreadsheet\Shared\OLERead;
+use PhpOffice\UltimateSpreadSheet\Shared\OLERead;
 use PHPUnit\Framework\TestCase;
 
 class OLEReadTest extends TestCase

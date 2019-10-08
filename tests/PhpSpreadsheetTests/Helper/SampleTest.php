@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Helper;
 
-use PhpOffice\PhpSpreadsheet\Helper\Sample;
+use PhpOffice\UltimateSpreadSheet\Helper\Sample;
 use PHPUnit\Framework\TestCase;
 
 class SampleTest extends TestCase

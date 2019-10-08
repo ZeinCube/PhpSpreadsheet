@@ -1,6 +1,6 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\IOFactory;
+use PhpOffice\UltimateSpreadSheet\IOFactory;
 
 require __DIR__ . '/../Header.php';
 
@@ -9,7 +9,7 @@ $inputFileName = __DIR__ . '/sampleData/example1.xlsx';
 
 // Create a new Reader of the type defined in $inputFileType
 $reader = IOFactory::createReader($inputFileType);
-// Load $inputFileName to a PhpSpreadsheet Object
+// Load $inputFileName to a UltimateSpreadSheet Object
 $spreadsheet = $reader->load($inputFileName);
 
 // Read an array list of any custom properties for this document

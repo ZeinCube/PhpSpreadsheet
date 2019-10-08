@@ -2,11 +2,11 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Reader;
 
-use PhpOffice\PhpSpreadsheet\Cell\DataType;
-use PhpOffice\PhpSpreadsheet\Document\Properties;
-use PhpOffice\PhpSpreadsheet\Reader\Ods;
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
-use PhpOffice\PhpSpreadsheet\Style\Font;
+use PhpOffice\UltimateSpreadSheet\Cell\DataType;
+use PhpOffice\UltimateSpreadSheet\Document\Properties;
+use PhpOffice\UltimateSpreadSheet\Reader\Ods;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Style\Font;
 use PHPUnit\Framework\TestCase;
 
 /**
@@ -196,7 +196,7 @@ class OdsTest extends TestCase
         $hyperlink = $firstSheet->getCell('A29');
 
         self::assertEquals(DataType::TYPE_STRING, $hyperlink->getDataType());
-        self::assertEquals('PhpSpreadsheet', $hyperlink->getValue());
+        self::assertEquals('UltimateSpreadSheet', $hyperlink->getValue());
         self::assertEquals('https://github.com/PHPOffice/phpspreadsheet', $hyperlink->getHyperlink()->getUrl());
     }
 

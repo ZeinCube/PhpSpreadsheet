@@ -2,7 +2,7 @@
 
 namespace PhpOffice\PhpSpreadsheetTests\Chart;
 
-use PhpOffice\PhpSpreadsheet\Chart\Layout;
+use PhpOffice\UltimateSpreadSheet\Chart\Layout;
 use PHPUnit\Framework\TestCase;
 
 class LayoutTest extends TestCase

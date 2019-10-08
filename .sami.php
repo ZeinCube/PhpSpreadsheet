@@ -16,9 +16,9 @@ $versions = GitVersionCollection::create($dir)
     ->add('master');
 
 return new Sami($iterator, [
-    'title' => 'PhpSpreadsheet',
+    'title' => 'UltimateSpreadSheet',
     'versions' => $versions,
     'build_dir' => __DIR__ . '/build/%version%',
     'cache_dir' => __DIR__ . '/cache/%version%',
-    'remote_repository' => new GitHubRemoteRepository('PHPOffice/PhpSpreadsheet', dirname($dir)),
+    'remote_repository' => new GitHubRemoteRepository('PHPOffice/UltimateSpreadSheet', dirname($dir)),
 ]);

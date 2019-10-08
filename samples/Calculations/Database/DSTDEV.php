@@ -1,12 +1,12 @@
 <?php
 
-use PhpOffice\PhpSpreadsheet\Spreadsheet;
+use PhpOffice\UltimateSpreadSheet\Spreadsheet;
 
 require __DIR__ . '/../../Header.php';
 
 $helper->log('Estimates the standard deviation based on a sample of selected database entries.');
 
-// Create new PhpSpreadsheet object
+// Create new UltimateSpreadSheet object
 $spreadsheet = new Spreadsheet();
 $worksheet = $spreadsheet->getActiveSheet();
 

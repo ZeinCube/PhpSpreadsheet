@@ -22,7 +22,7 @@ Please provide a [Minimal, Complete, and Verifiable example](https://stackoverfl
 require __DIR__ . '/vendor/autoload.php';
 
 // Create new Spreadsheet object
-$spreadsheet = new \PhpOffice\PhpSpreadsheet\Spreadsheet();
+$spreadsheet = new \PhpOffice\UltimateSpreadSheet\Spreadsheet();
 
 // add code that show the issue here...
 ```
